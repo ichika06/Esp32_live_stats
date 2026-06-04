@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: transparent;
+            font-family: Arial, sans-serif;
+        }
+
+        #panel {
+            position: fixed;
+
+            top: 10px;
+            right: 10px;
+
+            width: 250px;
+
+            padding: 12px;
+
+            color: white;
+
+            border-radius: 12px;
+
+            background:
+                rgba(
+                    0,
+                    0,
+                    0,
+                    0.80
+                );
+
+            backdrop-filter:
+                blur(10px);
+        }
+
+        .title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .line {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="panel">
+
+        <div class="title">
+            VALORANT DEBUG
+        </div>
+
+        <div
+            class="line"
+            id="kda">
+            KDA: 0 / 0 / 0
+        </div>
+
+        <div
+            class="line"
+            id="map">
+            MAP: Unknown
+        </div>
+
+        <div
+            class="line"
+            id="round">
+            ROUND: 0
+        </div>
+
+        <div
+            class="line"
+            id="score">
+            SCORE: 0 - 0
+        </div>
+
+        <div
+            class="line"
+            id="team">
+            TEAM: UNK
+        </div>
+
+        <div
+            class="line"
+            id="status">
+            STATUS: Waiting
+        </div>
+
+    </div>
+
+    <script src="overlay.js"></script>
+
+</body>
+</html>
